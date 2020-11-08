@@ -1,0 +1,2 @@
+C:\Users\bsamu\source\repos\BetterAudio\BetterAudio\BetterThanCraigslist\obj\Debug\BetterAudio.njsproj.CoreCompileInputs.cache
+C:\Users\bsamu\source\repos\BetterAudio\BetterAudio\BetterThanCraigslist\bin\Microsoft.NodejsTools.WebRole.dll

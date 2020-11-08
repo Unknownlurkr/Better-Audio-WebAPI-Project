@@ -14,7 +14,7 @@ var bcrypt = require('bcryptjs');
 const MongoClient = require('mongodb').MongoClient;
 const MongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
-const uri = "mongodb+srv://britt:unknownpassword@cluster0-vzczn.azure.mongodb.net/items?retryWrites=true&w=majority";
+const uri = "mongodb+srv://britt:unknownpassword@cluster0-vzczn.azure.mongodb.net/user?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -31,6 +31,7 @@ try {
 } catch (err) {
     console.log("Error : " + err);
 }
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 const userModel = require('./models/user'); 

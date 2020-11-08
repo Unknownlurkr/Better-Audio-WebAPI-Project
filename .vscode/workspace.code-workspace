@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Documents\\semester-5\\webapi\\BetterAudio"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
