@@ -1,0 +1,5 @@
+C:\Users\bsamu\source\repos\BetterThanCraigslist\BetterThanCraigslist\obj\Debug\BetterThanCraigslist.njsproj.CoreCompileInputs.cache
+C:\Users\bsamu\source\repos\BetterThanCraigslist\BetterThanCraigslist\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\bsamu\source\repos\BetterThanCraigslist\BetterThanCraigslist\obj\Debug\BetterThanCraigslist.njsprojAssemblyReference.cache
+C:\Users\bsamu\source\repos\BetterAudio\BetterAudio\BetterThanCraigslist\obj\Debug\BetterThanCraigslist.njsproj.CoreCompileInputs.cache
+C:\Users\bsamu\source\repos\BetterAudio\BetterAudio\BetterThanCraigslist\bin\Microsoft.NodejsTools.WebRole.dll
