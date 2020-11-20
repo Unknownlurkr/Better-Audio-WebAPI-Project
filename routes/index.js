@@ -14,7 +14,7 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function (req, res) {
-     try{
+    try {
         //Retrieve all articles if there is any 
         userModel.find({}, function (err, foundUsers) {
             console.log(err);
@@ -22,11 +22,11 @@ router.get('/', function (req, res) {
             //Pass found articles from server to pug file
             res.render('index', { users: foundUsers });
         });
-    } 
+    }
     catch (err) {
         console.log(err);
         res.render('index', { title: 'Express' });
-        }
+    }
 });
 
 /*POST for login*/
@@ -62,9 +62,9 @@ router.post('/register', function (req, res) {
             newUser.save(function (err) {
                 console.log('Inserting');
                 if (err) console.log(err);
-                    req.login(newUser, function (err) {
+                req.login(newUser, function (err) {
                     console.log('Trying to login');
-                if (err) console.log(err);
+                    if (err) console.log(err);
                     return res.redirect('/ ');
                 });
             });
@@ -96,7 +96,7 @@ router.post('/insert', function (req, res) {
     form.parse(req, function (err, fields, files) {
         console.log('Parsed form.');
         //Update the filename
-        files.image.name = fields.name + '.' + files.image.name.split('.')[1];
+        files.audio.name = fields.name + '.' + files.audio.name.split('.')[1];
         //Create a new article using the Articles Model Schema
         const items = new userModel({ name: fields.name, description: fields.description, image: files.image.name });
         //Insert post into DB
@@ -143,7 +143,7 @@ router.post('/delete/:id', function (req, res) {
     userModel.findByIdAndDelete(req.params.id, function (err, model) {
         res.send({ "success": "Article Successfully Deleted!" })
     });
-}); 
+});
 
 //Get Items page: this will display all of the items added for sale.
 router.get('/items', function (req, res) {

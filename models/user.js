@@ -4,11 +4,11 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     username: {
         type: String
-        
+
     },
     password: {
         type: String
-       
+
     },
     name: {
         type: String,
@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    image: {
+    audio: {
         type: String
     }
 });

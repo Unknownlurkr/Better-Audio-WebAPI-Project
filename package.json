@@ -1,15 +1,11 @@
 {
-  "name": "better-than-craigslist",
+  "name": "better-audio-200404362",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node index"
+    "start": "node app"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
-  "description": "BetterThanCraigslist",
+  "description": "BetterAudio-200404362",
   "author": {
     "name": ""
   },
@@ -20,17 +16,19 @@
     "cookie-parser": "^1.4.0",
     "cors": "^2.8.5",
     "debug": "^2.2.0",
-    "express": "^4.14.0",
+    "express": "^4.17.1",
     "express-session": "^1.17.1",
     "formidable": "^1.2.2",
     "fs": "0.0.1-security",
     "fs-extra": "^9.0.1",
     "mongo": "^0.1.0",
-    "mongoose": "^5.9.26",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.13",
     "morgan": "^1.7.0",
     "passport": "^0.4.1",
+    "passport-auth0": "^1.4.0",
     "passport-local": "^1.0.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^2.0.4",
     "serve-favicon": "^2.3.0",
     "util": "^0.12.3"
   }

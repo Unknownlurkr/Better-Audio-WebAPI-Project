@@ -2,7 +2,6 @@
 var express = require('express');
 var router = express.Router();
 var userModel = require('../models/user');
-var itemModel = require('../models/items');
 /* GET users listing. */
 router.get('/', function (req, res) {
     /* GET users listing. */
@@ -13,6 +12,6 @@ router.get('/', function (req, res) {
     } else {
         res.redirect('/login');
     }
-}); 
+});
 
 module.exports = router;
